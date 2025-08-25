@@ -1,0 +1,26 @@
+name: docking311
+channels:
+  - conda-forge
+  - bioconda
+  - insilichem
+dependencies:
+  - python=3.11
+  - ipykernel
+  - numpy
+  - pandas
+  - scipy
+  - biopython
+  - rdkit
+  - mdanalysis
+  - autodock-vina
+  - openbabel=3.1.1
+  # - autodocktools-prepare   # REMOVED: Conflicts with Python 3.11. Use 'meeko' instead.
+  - py3Dmol
+  - matplotlib
+  - ipywidgets>=8
+  - prolif
+  - pip
+  - pip:
+      - meeko               # This is your Python 3 replacement for preparation scripts
+      - rcsbsearchapi
+      - pdb2pqr
